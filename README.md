@@ -1,5 +1,3 @@
-# VW Parallel parsing improvements
-
 <p align="center">
 <a href="https://www.mlpack.org/"><img style="padding: 20px;" alt="drawing" src="microsoft_research.jpg" height="200"></a>
 <a href="https://www.mlpack.org/"><img style="padding: 20px;" alt="drawing" src="VW.png" height="200"></a>
