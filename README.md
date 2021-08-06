@@ -1,6 +1,6 @@
 <p align="center">
-<a href="https://www.mlpack.org/"><img style="padding: 20px;" alt="drawing" src="microsoft_research.jpg" height="200"></a>
-<a href="https://www.mlpack.org/"><img style="padding: 20px;" alt="drawing" src="VW.png" height="200"></a>
+<a href="https://www.microsoft.com/en-us/research/"><img style="padding: 20px;" alt="drawing" src="microsoft_research.jpg" height="200"></a>
+<a href="https://vowpalwabbit.org/"><img style="padding: 20px;" alt="drawing" src="VW.png" height="200"></a>
 </p>
 
 
@@ -21,3 +21,20 @@ Example parsing is an expensive part of VW training pipeline. Support for parall
 
 ## Code:
 All the work can be found here in the form of pull requests. [link](https://github.com/nishantkr18/vowpal_wabbit/pulls).
+
+Work on Parallel parsing was performed last year by Cassandra. My work this year builds upon the previous work. So, the updated branch (containing all the work done last year, and updated with the master branch(just compiles)) is the [`multithread_parser_with_passes`](https://github.com/nishantkr18/vowpal_wabbit/tree/multithread_parser_with_passes). Hence, I've created pull requests against that branch for easy comparision.
+
+Currently, there are three active branches in [`nishantkr18/vowpal_wabbit`](https://github.com/nishantkr18/vowpal_wabbit):
+- `multithread_parser_with_passes`: contains work from last year. All new changes compared against this.
+- `simplified_interaction`: contains all the work done this year for multithreading.
+- `master-benchmark` : contains an extra timer script for creating benchmarks for the master branch.
+
+The rest of the branches contain implementation of ideas that were eventually dropped.
+
+## How to run:
+### Benchmark dataset:
+All benchmarks are carried out on a repeated sample of the dataset 0001.dat available in the repository tests [here]().
+
+## Lessons learnt:
+- There can be huge performance differences between the debug and release build. So, we make sure to run all benchmarks on the release build.
+- Using a tool like valgrind slows down the program a lot, so the CPU waiting time for lock contentions cannot be studied properly.
