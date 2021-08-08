@@ -1,6 +1,6 @@
 <p align="center">
-<a href="https://www.microsoft.com/en-us/research/"><img style="padding: 20px;" alt="drawing" src="microsoft_research.jpg" height="200"></a>
-<a href="https://vowpalwabbit.org/"><img style="padding: 20px;" alt="drawing" src="VW.png" height="200"></a>
+<a href="https://www.microsoft.com/en-us/research/"><img style="padding: 20px;" alt="drawing" src="assets/microsoft_research.jpg" height="200"></a>
+<a href="https://vowpalwabbit.org/"><img style="padding: 20px;" alt="drawing" src="assets/VW.png" height="200"></a>
 </p>
 
 
@@ -29,6 +29,9 @@ Currently, there are three active branches in [`nishantkr18/vowpal_wabbit`](http
 - `simplified_interaction`: contains all the work done this year for multithreading.
 *(The name "simplified interaction" comes from the most efficient plan we could think of for supporting multiple passes, after several complex ideas)*
 - `master-benchmark` : contains an extra timer script for creating benchmarks for the master branch.
+
+Inactive branches (not updated):
+- `cache_reader_working`: modifies the cache reader functions to read from a character pointer directly, therefore doesn’t require any dummy io_buf instance.
 
 The rest of the branches contain implementation of ideas that were eventually dropped.
 
