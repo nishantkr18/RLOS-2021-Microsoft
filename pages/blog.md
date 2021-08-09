@@ -8,7 +8,7 @@ Basically, it contains the highlights of the project.
 
 ### 16th May 2:21 am:
 * Moved cache writing from the parser threads to the learner thread. The following flow was constructed:
-<a><img style="padding: 20px;" alt="drawing" src="assets/blog1.png" height="500"></a>
+<a><img style="padding: 20px;" alt="drawing" src="../assets/blog1.png" height="500"></a>
 
 ### 16th May 8:40pm
 

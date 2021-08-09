@@ -1,0 +1,5 @@
+# JSON:
+
+The difficulty with the JSON input is that one line of input may have multiple examples to parse from it. This is opposed to text input, where one line of input corresponds to exactly one example to parse and use to learn. Therefore, we need to be able to reserve the correct amount of examples in the ready examples queue, since this will be variable for JSON input. We would need to have a way of storing the correct amount of examples in our ready examples queue.
+
+Our plan to make it work is as follows. For each line of input, we now must handle a vector of examples that will be created, not just one example (since we are given a vector of examples as the result of using JSON input). We plan to transform the ready_examples_queue in the parser component of VW from a queue of examples to a queue of vectors of examples. This will guarantee compatibility with the JSON input and also ensure that the ordering of the examples corresponds to that in the datafile.

@@ -19,6 +19,12 @@ Vowpal Wabbit is known for its blazing-fast performance. However, VW's parsers c
 
 - **Outcome**: Ability to utilize multicore machines more effectively when training with cache format.
 
+## Pages:
+* [Work done so far](pages/work_done_so_far.md)
+* [Cache](pages/cache.md)
+* [JSON](pages/json.md)
+* [Blog](pages/blog.md)
+
 ## Code:
 All the work can be found here in the form of pull requests. [link](https://github.com/nishantkr18/vowpal_wabbit/pulls).
 

@@ -1,7 +1,7 @@
 # Work done so far:
 *Since this project is a continuation of the previous year’s RLOS project, this section describes last year’s project in brief.*
 
-<a><img style="padding: 20px;" alt="drawing" src="assets/before_last_year.PNG" height="500"></a>
+<a><img style="padding: 20px;" alt="drawing" src="../assets/before_last_year.PNG" height="500"></a>
 
 The major contribution of last year’s project was parallelizing the parser for the text input format. The
 following points try to summarize the workflow:
@@ -14,7 +14,7 @@ it only has to parse, because the reading job is taken care of by a separate I/O
     * The learner will then have to wait for the example in the ready_parsed_examples queue to be flagged as parsed, before continuing.
 
 
-<a><img style="padding: 20px;" alt="drawing" src="assets/after_last_year.PNG" height="500"></a>
+<a><img style="padding: 20px;" alt="drawing" src="../assets/after_last_year.PNG" height="500"></a>
 
 
 For More details, please refer: https://github.com/cassmarcussen/vowpal_wabbit/wiki
