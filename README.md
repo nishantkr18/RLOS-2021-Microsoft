@@ -12,12 +12,12 @@ Our goal is to bring together a diverse group of students from around the world 
 
 At the end of the program, students will present each of their projects to the Microsoft Research Real World Reinforcement Learning team online.
 
-## Project Abstract:
-Example parsing is an expensive part of VW training pipeline. Support for parallel parsing of text input was contributed last year, but it doesn’t support the more efficient cache format.
+## Project Abstract (proposed):
+Vowpal Wabbit is known for its blazing-fast performance. However, VW's parsers can be a bottleneck for most operations, so an effective way to multithread the parsers is required to unleash their true potential. Last year, parallel parsing support for text input format was provided. This project builds upon that by providing a better and more efficient way to read and write cache, support for multiple passes, multiline examples, and JSON/DsJSON input formats.
 
-- **Goals**: Design and implement an extension to the cache file format to support efficient parallel parsing.
+- **Goal**: Design and implement an extension to the cache file format to support efficient parallel parsing.
 
-- **Outcomes**: Ability to utilize multicore machines more effectively when training with cache format.
+- **Outcome**: Ability to utilize multicore machines more effectively when training with cache format.
 
 ## Code:
 All the work can be found here in the form of pull requests. [link](https://github.com/nishantkr18/vowpal_wabbit/pulls).
@@ -31,7 +31,7 @@ Currently, there are three active branches in [`nishantkr18/vowpal_wabbit`](http
 - `master-benchmark` : contains an extra timer script for creating benchmarks for the master branch.
 
 Inactive branches (not updated):
-- `cache_reader_working`: modifies the cache reader functions to read from a character pointer directly, therefore doesn’t require any dummy io_buf instance.
+- `cache_reader_working`: modifies the cache reader functions to read from a character` pointer directly, therefore doesn’t require any dummy io_buf instance.
 
 The rest of the branches contain implementation of ideas that were eventually dropped.
 
@@ -46,8 +46,8 @@ Later, I shifted to Arch, for which I just had to install the additional `cmake`
 ### Benchmark dataset:
 All benchmarks are carried out on a repeated sample of the dataset 0001.dat available in the repository tests [here](https://github.com/nishantkr18/vowpal_wabbit/blob/simplified_interaction/test/train-sets/0001.dat).
 We have used two variants of the dataset:
-- **hundred thousand examples**: to generate, run `for i in {1..500}; do cat ../test/train-sets/0001.dat >> ../../0001_ht.dat; done `
-- **million examples**: to generate, run `for i in {1..5000}; do cat ../test/train-sets/0001.dat >> ../../0001_million.dat; done `
+- **hundred thousand examples**: to generate, run `for i in {1..500}; do cat ../test/train-sets/0001.dat >> ../../0001_ht.dat; done ` from the build directory.
+- **million examples**: to generate, run `for i in {1..5000}; do cat ../test/train-sets/0001.dat >> ../../0001_million.dat; done ` from the build directory.
 
 ### Commands used for testing:
 A typical command used for testing and benchmarks is:
