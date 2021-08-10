@@ -3,6 +3,8 @@
 <a href="https://vowpalwabbit.org/"><img style="padding: 20px;" alt="drawing" src="assets/VW.png" height="200"></a>
 </p>
 
+[Presentation link](https://docs.google.com/presentation/d/1SXanD0kRcpRYMmKSy1oy-NWq81bb_PcuzNlCVO9K8u8/edit?usp=sharing)
+
 
 ## About the program (from website):
 
@@ -20,8 +22,8 @@ Vowpal Wabbit is known for its blazing-fast performance. However, VW's parsers c
 - **Outcome**: Ability to utilize multicore machines more effectively when training with cache format.
 
 ## Pages:
-* [Work done so far](pages/work_done_so_far.md)
-* [Cache](pages/cache.md)
+* [Previous work](pages/work_done_so_far.md)
+* [Cache](cache/cache.md)
 * [JSON](pages/json.md)
 * [Blog](pages/blog.md)
 
