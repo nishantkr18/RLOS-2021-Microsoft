@@ -32,6 +32,7 @@ All the work can be found here in the form of pull requests. [link](https://gith
     * [Cache](cache/cache.md)
     * [JSON](json/json.md)
 * [Benchmark results](result/result.md)
+* [Plans for future](fw/fw.md)
 * [Blog](pages/blog.md)
 
 ## Resources:
