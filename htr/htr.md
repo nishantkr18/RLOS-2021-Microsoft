@@ -1,6 +1,21 @@
 # How to run:
 *This page helps in creating and running the tests for this project.*
 
+## Code:
+
+Work on Parallel parsing was performed last year by Cassandra. My work this year builds upon the previous work. So, the updated branch (containing all the work done last year, and updated with the master branch(just compiles)) is the [`multithread_parser_with_passes`](https://github.com/nishantkr18/vowpal_wabbit/tree/multithread_parser_with_passes). Hence, I've created pull requests against that branch for easy comparisions.
+
+Currently, there are three active branches in [`nishantkr18/vowpal_wabbit`](https://github.com/nishantkr18/vowpal_wabbit):
+- `multithread_parser_with_passes`: contains work from last year. All new changes compared against this.
+- `simplified_interaction`: contains all the work done this year for multithreading.
+*(The name "simplified interaction" comes from the most efficient plan we could think of for supporting multiple passes, after several complex ideas)*
+- `master-benchmark` : contains an extra timer script for creating benchmarks for the master branch.
+
+Inactive branches (not updated):
+- `cache_reader_working`: modifies the cache reader functions to read from a character` pointer directly, therefore doesn’t require any dummy io_buf instance.
+
+The rest of the branches contain implementation of ideas that were eventually dropped.
+
 ### Building:
 Initially I used Debian(Ubuntu 20.04) for the project, which is easy to work on, given that all the dependencies and build instructions are provided on the vowpal wabbit github wiki.
 

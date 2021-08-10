@@ -21,6 +21,9 @@ Vowpal Wabbit is known for its blazing-fast performance. However, VW's parsers c
 
 - **Outcome**: Ability to utilize multicore machines more effectively when training with cache format.
 
+## Work done:
+All the work can be found here in the form of pull requests. [link](https://github.com/nishantkr18/vowpal_wabbit/pulls). Look at [how to run](htr/htr.md) for more details.
+
 ## Pages:
 * [How to run](htr/htr.md)
 * [Previous work](prev_work/prev_work.md)
@@ -28,33 +31,20 @@ Vowpal Wabbit is known for its blazing-fast performance. However, VW's parsers c
     * [Relocations](changes/changes.md)
     * [Cache](cache/cache.md)
     * [JSON](pages/json.md)
+* [Benchmark results](result/result.md)
 * [Blog](pages/blog.md)
-
-## Code:
-All the work can be found here in the form of pull requests. [link](https://github.com/nishantkr18/vowpal_wabbit/pulls).
-
-Work on Parallel parsing was performed last year by Cassandra. My work this year builds upon the previous work. So, the updated branch (containing all the work done last year, and updated with the master branch(just compiles)) is the [`multithread_parser_with_passes`](https://github.com/nishantkr18/vowpal_wabbit/tree/multithread_parser_with_passes). Hence, I've created pull requests against that branch for easy comparisions.
-
-Currently, there are three active branches in [`nishantkr18/vowpal_wabbit`](https://github.com/nishantkr18/vowpal_wabbit):
-- `multithread_parser_with_passes`: contains work from last year. All new changes compared against this.
-- `simplified_interaction`: contains all the work done this year for multithreading.
-*(The name "simplified interaction" comes from the most efficient plan we could think of for supporting multiple passes, after several complex ideas)*
-- `master-benchmark` : contains an extra timer script for creating benchmarks for the master branch.
-
-Inactive branches (not updated):
-- `cache_reader_working`: modifies the cache reader functions to read from a character` pointer directly, therefore doesn’t require any dummy io_buf instance.
-
-The rest of the branches contain implementation of ideas that were eventually dropped.
-
-## Lessons learnt:
-- There can be huge performance differences between the debug and release build. So, we make sure to run all benchmarks on the release build.
-- Using a tool like valgrind slows down the program a lot, so the CPU waiting time for lock contentions cannot be studied properly.
 
 ## Resources:
 These resources could be helpful for getting started with multithreading in c++.
 
 - [link 1](https://youtube.com/playlist?list=PLk6CEY9XxSIAeK-EAh3hB4fgNvYkYmghp)
 - [link 2](https://www.youtube.com/playlist?list=PL1835A90FC78FF8BE)
+
+## Lessons learnt the hard way:
+- There can be huge performance differences between the debug and release build. So, we make sure to run all benchmarks on the release build.
+- Using a tool like valgrind slows down the program a lot, so the CPU waiting time for lock contentions cannot be studied properly.
+- CPU time benchmarking results may vary across datasets.
+- Sometimes, an average of `100` runs may not be enough to get an accurate estimate of time taken by the CPU.
 
 ## Contribute?
 Please feel free to contribute by making pull requests or opening issues on the [repo](https://github.com/nishantkr18/vowpal_wabbit/). I would also love to hear your thoughts about this project. Please use any form of contact mentioned on my website or github bio.
