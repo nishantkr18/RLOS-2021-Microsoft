@@ -22,9 +22,11 @@ Vowpal Wabbit is known for its blazing-fast performance. However, VW's parsers c
 - **Outcome**: Ability to utilize multicore machines more effectively when training with cache format.
 
 ## Pages:
-* [Previous work](pages/work_done_so_far.md)
-* [Cache](cache/cache.md)
-* [JSON](pages/json.md)
+* [Previous work](prev_work/prev_work.md)
+* Major changes made:
+    * [Relocations](changes/changes.md)
+    * [Cache](cache/cache.md)
+    * [JSON](pages/json.md)
 * [Blog](pages/blog.md)
 
 ## Code:
