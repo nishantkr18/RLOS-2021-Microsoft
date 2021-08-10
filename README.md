@@ -30,7 +30,7 @@ All the work can be found here in the form of pull requests. [link](https://gith
 * Major changes made:
     * [Relocations](changes/changes.md)
     * [Cache](cache/cache.md)
-    * [JSON](pages/json.md)
+    * [JSON](json/json.md)
 * [Benchmark results](result/result.md)
 * [Blog](pages/blog.md)
 
