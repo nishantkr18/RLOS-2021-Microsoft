@@ -5,6 +5,7 @@
 
 [Presentation link](https://docs.google.com/presentation/d/1SXanD0kRcpRYMmKSy1oy-NWq81bb_PcuzNlCVO9K8u8/edit?usp=sharing)
 
+[Video link](https://youtu.be/Ggnuwfiwn3E?t=660)
 
 ## About the program (from website):
 
